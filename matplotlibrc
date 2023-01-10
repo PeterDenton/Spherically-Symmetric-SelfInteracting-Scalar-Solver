@@ -1,0 +1,16 @@
+text.usetex		: True
+font.size		: 18
+#backend			: pdf
+savefig.bbox	: tight
+
+xtick.direction	: in
+ytick.direction	: in
+xtick.top		: on
+ytick.right		: on
+
+xtick.major.pad	: 8
+xtick.minor.pad	: 8
+ytick.major.pad	: 8
+ytick.minor.pad	: 8
+
+legend.frameon	: False
