@@ -14,7 +14,7 @@ void phi0_Plot()
 	double g = 1;
 	object obj = HARD;
 
-	n_lambda = 1e3; // 1e3 takes a bit, 1e2 doesn't take too long
+	n_lambda = 1e2; // 1e3 takes a bit, 1e2 doesn't take too long
 	n_m = 2e0;
 
 	m_min = 0;

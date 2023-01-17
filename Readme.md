@@ -24,12 +24,12 @@ Code to create the figures in the paper is also provided in the [src/Figures.cpp
 - **Distance**: cm
 
 ## Dependencies
-This depends on gsl which can be found in `libgsl-dev` on ubuntu.
+This depends on gsl which can be found in `libgsl-dev` on ubuntu. The plots require `python`, `numpy`, `scipy`, and `matplotlib`.
 
 ## Bugs and Features
 If any bugs are identified or any features suggested, please use the tools (issues, pull requests, etc.) on github, or contact the creator.
 
 ## Reference
-If you use this code please reference **[arXiv:2005.xxxxx](https://arxiv.org/abs/2005.xxxxx)** and **[doi:10.5281/zenodo.3826887](https://doi.org/10.5281/zenodo.3826887)**. If you use the Sun's density profile, please reference **[arXiv:astro-ph/0412440](https://arxiv.org/abs/astro-ph/0412440)**, if you use the Earth's density profile, please reference **[DOI:10.1016/0031-9201(81)90046-7](https://doi.org/10.1016/0031-9201(81)90046-7)**.
+If you use this code please reference **[arXiv:2005.xxxxx](https://arxiv.org/abs/2005.xxxxx)** and **[doi:10.5281/zenodo.xxxx](https://doi.org/10.5281/zenodo.xxxx)**. If you use the Sun's density profile, please reference **[arXiv:astro-ph/0412440](https://arxiv.org/abs/astro-ph/0412440)**, if you use the Earth's density profile, please reference **[DOI:10.1016/0031-9201(81)90046-7](https://doi.org/10.1016/0031-9201(81)90046-7)**.
 
 
