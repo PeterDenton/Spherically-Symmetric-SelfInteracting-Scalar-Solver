@@ -1,8 +1,8 @@
-# Spherically-Symmetric-SelfInteracting-Scalar-Solver (S5)
+# Spherically Symmetric Self-Interacting Scalar Solver (S5)
 
 | arXiv | Zenodo DOI |
 |:-----:|:---:|
-|[![arXiv](https://img.shields.io/badge/arXiv-2301.xxxxx-orange.svg)](https://arXiv.org/abs/2301.xxxxx)|[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.587389333.svg)](https://doi.org/10.5281/zenodo.587389333)|
+|[![arXiv](https://img.shields.io/badge/arXiv-2301.xxxxx-orange.svg)](https://arXiv.org/abs/2301.xxxxx)|[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7545658.svg)](https://doi.org/10.5281/zenodo.7545658)|
 
 This code allows for the calculation of the value of the field that solves a Klein-Gordon equation with a mass term and a four-point self interaction &lambda;&phi;<sup>4</sup> term with an arbitrary spherically symmetric source. The figures in the paper can be made via the functions in [src/Figures.cpp](src/Figures.cpp).
 
@@ -30,4 +30,4 @@ This depends on gsl which can be found in `libgsl-dev` on ubuntu. The plots requ
 If any bugs are identified or any features suggested, please use the tools (issues, pull requests, etc.) on github, or contact the creator.
 
 ## Reference
-If you use this code please reference **[arXiv:2005.xxxxx](https://arxiv.org/abs/2005.xxxxx)** and **[doi:10.5281/zenodo.587389333](https://doi.org/10.5281/zenodo.587389333)**. If you use the Sun's density profile, please reference **[arXiv:astro-ph/0412440](https://arxiv.org/abs/astro-ph/0412440)**, if you use the Earth's density profile, please reference **[DOI:10.1016/0031-9201(81)90046-7](https://doi.org/10.1016/0031-9201(81)90046-7)**.
+If you use this code please reference **[arXiv:2005.xxxxx](https://arxiv.org/abs/2005.xxxxx)** and **[doi:10.5281/zenodo.7545658](https://doi.org/10.5281/zenodo.7545658)**. If you use the Sun's density profile, please reference **[arXiv:astro-ph/0412440](https://arxiv.org/abs/astro-ph/0412440)**, if you use the Earth's density profile, please reference **[doi:10.1016/0031-9201(81)90046-7](https://doi.org/10.1016/0031-9201(81)90046-7)**.

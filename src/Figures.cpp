@@ -11,7 +11,6 @@ void phi0_Plot()
 	double lambda, lambda_min, lambda_max, lambda_scale;
 	double m, m_min, m_max, m_step;
 	int n_m, n_lambda;
-	double g = 1;
 	object obj = HARD;
 
 	n_lambda = 1e2; // 1e3 takes a bit, 1e2 doesn't take too long
@@ -38,7 +37,7 @@ void phi0_Plot()
 		for (int j = 0; j <= n_m; j++)
 		{
 			m = m_min + j * m_step;
-			fprintf(data, "%g ", phi0_KG(m, lambda, g, obj));
+			fprintf(data, "%g ", phi0_KG(m, lambda, obj));
 		} // j, n_m, m
 		fprintf(data, "\n");
 	} // i, n_lambda, lambda
@@ -56,7 +55,6 @@ void phi_m_lambda_Plot()
 	double rs[n_r + 1], phis[n_m][n_lambda][n_r + 1];
 	double phi0;
 	object obj = HARD;
-	double g = 1;
 
 	// perform the calculations
 	for (int i = 0; i < n_m; i++)
@@ -66,8 +64,8 @@ void phi_m_lambda_Plot()
 		{
 			lambda = lambdas[j];
 			printf("m=%g, lambda=%g ...\n", m, lambda);
-			phi0 = phi0_KG(m, lambda, g, obj);
-			KG(m, lambda, g, obj, phi0, 2 * r_s(obj), n_r, rs, phis[i][j]);
+			phi0 = phi0_KG(m, lambda, obj);
+			KG(m, lambda, obj, phi0, 2 * r_s(obj), n_r, rs, phis[i][j]);
 		} // j, n_lambda, lambda
 	} // i, n_m, m
 

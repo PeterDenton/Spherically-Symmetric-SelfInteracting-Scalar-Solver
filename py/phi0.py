@@ -7,7 +7,7 @@ fs = 10 # fontsize
 
 # set up the physics parameters
 r_s = 1
-gn = 1
+n = 1
 
 # read in from file
 name = "phi0"
@@ -28,10 +28,10 @@ fig.subplots_adjust(hspace = 0)
 def phi0_Guess(lambda_, alpha):
 	global m
 	if m == 0:
-		low_lambda_limit = r_s ** 2 * gn * 0.5
+		low_lambda_limit = r_s ** 2 * n * 0.5
 	else:
-		low_lambda_limit = gn * (1 - np.exp(-m * r_s) * (1 + m * r_s)) / m ** 2
-	high_lambda_limit_coefficient = (6 * gn) ** (1. / 3)
+		low_lambda_limit = n * (1 - np.exp(-m * r_s) * (1 + m * r_s)) / m ** 2
+	high_lambda_limit_coefficient = (6 * n) ** (1. / 3)
 	return -1. / (high_lambda_limit_coefficient ** -alpha * lambda_ ** (alpha / 3) + low_lambda_limit ** -alpha) ** (1. / alpha) # 1/(1/f1+1/f2)
 
 # calculate the optimal value for alpha over the given range
@@ -67,7 +67,7 @@ axs[0].axis(v)
 
 axs[0].set_ylabel(r"$|\phi(0)|$")
 
-s = r"$r_s=gn=1$"
+s = r"$r_s=n=1$"
 s += "\n"
 s += r"$\alpha=2$"
 axs[0].text(0.01, 0.99, s, ha = "left", va = "top", transform = axs[0].transAxes, fontsize = fs)

@@ -29,7 +29,7 @@ v[1] = data["r"][-1]
 v[3] = 0
 plt.axis(v)
 
-s = r"$r_s=gn=1$"
+s = r"$r_s=n=1$"
 plt.text(0.01, 0.99, s, ha = "left", va = "top", transform = plt.gca().transAxes, fontsize = fs)
 
 s = r"$m,\lambda$"
